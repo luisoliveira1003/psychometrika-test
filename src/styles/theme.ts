@@ -6,12 +6,16 @@ export const theme = extendTheme({
       "900": "#FFFFFF",
       "300": "#E5E5E5",
     },
-    blue: {
+    cyan: {
+      "600": "#005c71",
       "500": "#00718A",
     },
     gray: {
       "700": "#424242",
       "400": "#8C939D",
+    },
+    black: {
+      "900": "#000000",
     },
   },
   fonts: {

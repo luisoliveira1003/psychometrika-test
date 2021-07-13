@@ -24,11 +24,11 @@ import {
         <ChakraInput
           name={name}
           id={name}
-          focusBorderColor="pink.500"
-          bgColor="gray.900"
+          focusBorderColor="cyan.500"
+          bgColor="white.900"
           variant="filled"
           _hover={{
-            bgColor: "gray.900",
+            bgColor: "white.500",
           }}
           size="lg"
           ref={ref}
