@@ -44,7 +44,7 @@ export function Profile({ nameProfile }: ProfileProps) {
     if (profile === "admin") {
       Router.push("/dashboard");
     } else {
-      Router.push("/dashboard/aluno");
+      Router.push("/dashboard/student");
     }
   }
 
