@@ -1,20 +1,12 @@
 import {
-  Flex,
-  Box,
-  Text,
   Avatar,
-  Button,
-  Menu,
+  Button, Icon, Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
-  Icon,
-  RadioGroup,
-  Stack,
-  Radio,
+  MenuList, Radio, RadioGroup,
+  Stack, Text
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 import Router from "next/router";
+import { useEffect, useState } from "react";
 
 interface ProfileProps {
   nameProfile: string;
@@ -104,7 +96,7 @@ export function Profile({ nameProfile }: ProfileProps) {
           </Stack>
         </RadioGroup>
 
-        <MenuItem>
+        <Stack alignItems="start" ml="3" mt="2">
           <Button
             type="submit"
             color="cyan.500"
@@ -113,9 +105,9 @@ export function Profile({ nameProfile }: ProfileProps) {
           >
             Alterar
           </Button>
-        </MenuItem>
+          </Stack>
 
-        <Stack>
+        <Stack mt="2">
           <Button color="cyan.500" variant="link" onClick={handleSignOut}>
             Sair
           </Button>
