@@ -1,24 +1,42 @@
 import {
   Box,
-  Divider,
+  Button,
   Flex,
   Heading,
-  Stack,
+  Input,
   StackDivider,
-  Text,
   VStack,
 } from "@chakra-ui/react";
-import { Header } from "../../components/Header";
-
-import { Table, Thead, Tbody, Tr, Th, Td, chakra } from "@chakra-ui/react";
-import { TriangleDownIcon, TriangleUpIcon } from "@chakra-ui/icons";
-import { useTable, useSortBy } from "react-table";
-import React, { useRef } from "react";
-import { useDrop } from "react-dnd";
+import React, { FormEvent, useEffect, useState } from "react";
 import NoSSR from "react-no-ssr";
 import DragDrop from "../../components/DragDrop";
+import { Header } from "../../components/Header";
+import { api } from "../../services/api";
+import { IBookProps } from "../../utils/types";
 
 export default function Dashboard() {
+  // const [nameFront, setNameFront] = useState("");
+  // const [listSerieChapter, setListSerieChapter] = useState<IBookProps>();
+
+  // function handleChangeNameFrontBook(event: FormEvent) {
+  //   event.preventDefault();
+
+  //   api.get("/books/list");
+  // }
+
+  // async function loadBooks() {
+  //   return await api.get("/admin/list-book");
+  // }
+
+  // useEffect(() => {
+  //   async function loadBooks() {
+  //     const response = await api.get("/admin/list-book");
+
+  //     setListSerieChapter(response);
+  //   }
+  //   loadBooks();
+  // }, []);
+
   return (
     <Flex direction="column" h="100vh">
       <Header nameProfile="admin" />
@@ -41,11 +59,11 @@ export default function Dashboard() {
           <Heading fontSize={22}>Nome da Escola</Heading>
         </Flex>
 
-        <Flex ml={20}>
+        <Box ml={6}>
           <NoSSR>
             <DragDrop />
           </NoSSR>
-        </Flex>
+        </Box>
       </VStack>
     </Flex>
   );
