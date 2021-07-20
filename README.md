@@ -49,9 +49,8 @@ se encontra na pasta psychometrika-test
 
 ### 🔗 Link para o projeto online
 
-
-[Psychometrika - Login](https://psychometrika-test-71jmwppqo-luisoliveira1003.vercel.app/)
-[Psychometrika - Dashboard](https://psychometrika-test-71jmwppqo-luisoliveira1003.vercel.app/dashboard)
+* [Psychometrika - Login](https://psychometrika-test-71jmwppqo-luisoliveira1003.vercel.app/)
+* [Psychometrika - Dashboard](https://psychometrika-test-71jmwppqo-luisoliveira1003.vercel.app/dashboard)
 
 &nbsp;
 
