@@ -45,6 +45,13 @@ Crie um arquivo .env.local e coloque as variaveis
 de ambiente baseado no arquivo .env.example que
 se encontra na pasta psychometrika-test
 
+&nbsp;
+
+### 🔗 Link para o projeto online
+
+
+[Psychometrika - Login](https://psychometrika-test-71jmwppqo-luisoliveira1003.vercel.app/)
+[Psychometrika - Dashboard](https://psychometrika-test-71jmwppqo-luisoliveira1003.vercel.app/dashboard)
 
 &nbsp;
 
