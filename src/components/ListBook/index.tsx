@@ -73,6 +73,7 @@ export default function ListBook() {
                   mb="20px"
                   borderRadius="4px"
                   h="40px"
+                  key={_id}
                 >
                   <Box
                     w="16px"
