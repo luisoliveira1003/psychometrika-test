@@ -1,9 +1,14 @@
 import {
   Avatar,
-  Button, Icon, Menu,
+  Button,
+  Icon,
+  Menu,
   MenuButton,
-  MenuList, Radio, RadioGroup,
-  Stack, Text
+  MenuList,
+  Radio,
+  RadioGroup,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
 import Router from "next/router";
 import { useEffect, useState } from "react";
@@ -28,7 +33,7 @@ export function Profile({ nameProfile }: ProfileProps) {
     </Icon>
   );
 
-  function handleChangeProfile(value) {
+  function handleChangeProfile(value: string) {
     setProfile(value);
   }
 
@@ -105,7 +110,7 @@ export function Profile({ nameProfile }: ProfileProps) {
           >
             Alterar
           </Button>
-          </Stack>
+        </Stack>
 
         <Stack mt="2">
           <Button color="cyan.500" variant="link" onClick={handleSignOut}>
